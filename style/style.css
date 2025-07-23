@@ -96,3 +96,61 @@ li a {
   height: auto;
   display: block;
 }
+
+/* plants-section style */
+.plants-section {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.plants-section h2 {
+  margin-bottom: 16px;
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(233, 90, 8);
+}
+
+.plants-section h2 span {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.plants-section p {
+  width: 888px;
+  margin: 0 auto;
+}
+
+.plant-cards {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 48px;
+}
+
+.plant-card {
+  text-align: center;
+}
+
+.plant-title {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(17, 17, 17);
+}
+
+.price {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(17, 17, 17);
+}
+.btn {
+  margin-top: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: rgb(233, 90, 8);
+  padding: 26px 50px;
+}

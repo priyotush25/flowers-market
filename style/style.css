@@ -208,7 +208,7 @@ li a {
   padding: 26px 50px;
 }
 
-/* our plants responsive style */
+/* ==============our plants responsive style================ */
 @media screen and (max-width: 768px) {
   .plants-section {
     margin-top: 65px;
@@ -240,7 +240,7 @@ li a {
   }
 }
 
-/* plants-lover style */
+/* ==============plants-lover style================ */
 .plants-lover {
   margin-top: 210px;
   display: flex;
@@ -293,12 +293,13 @@ li a {
 }
 
 /* plants-lover responsive style */
+
 @media screen and (max-width: 768px) {
   .plants-lover {
     overflow: hidden;
     max-width: 95%;
     margin-top: 120px;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .plants-lover-text {
     width: 95%;
@@ -317,15 +318,11 @@ li a {
   }
 
   .badge {
-    position: absolute;
-    top: 1060px;
-    left: -45px;
-    width: 40%;
-    z-index: 1;
+    display: none;
   }
 }
 
-/* last deals section style */
+/* ==============latest deals section style ================ */
 .latest-deals {
   display: flex;
   text-align: center;
@@ -339,11 +336,11 @@ li a {
   max-width: 95%;
   margin-bottom: 120px;
 }
+
 .latest-deal-text p {
   margin-top: 16px;
 }
 
-/* card container */
 .latest-cards {
   gap: 20px;
   max-width: 95%;
@@ -422,7 +419,7 @@ li a {
   text-decoration: underline;
 }
 
-/* last deals section style */
+/* ==============last deals section style  ================ */
 
 @media screen and (max-width: 768px) {
   .latest-cards {
@@ -430,7 +427,9 @@ li a {
     grid-template-rows: auto;
     margin-bottom: 44px;
   }
-
+  .latest-deal-text {
+    margin-bottom: 47px;
+  }
   .card-1,
   .card-2,
   .card-3 {
@@ -463,7 +462,7 @@ li a {
   }
 }
 
-/* join-section style */
+/*==============join-section style===================*/
 
 .news-letter {
   background: linear-gradient(rgba(7, 51, 79, 0.4), rgba(7, 51, 79, 0.4)),
@@ -595,7 +594,7 @@ li a {
     gap: 40px;
     margin: 0 auto;
     max-width: 100%;
-    padding: 40px 60px;
+    padding: 47px 20px;
     flex-direction: column;
   }
 }

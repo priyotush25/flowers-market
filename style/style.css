@@ -1,11 +1,21 @@
+/* ========= Reset & Base Style ========== */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-/* Share Style */
+a {
+  text-decoration: none;
+}
+
+/* ========= Shared Style ========== */
 body {
   background-color: rgb(245, 248, 255);
 }
@@ -41,8 +51,9 @@ p {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* nav style */
+/* ========= Navigation ========== */
 nav {
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,18 +65,14 @@ nav {
   align-items: center;
 }
 
+.logo img {
+  width: 135px;
+}
+
 ul {
   gap: 48px;
   display: flex;
   justify-content: center;
-}
-
-ul li {
-  list-style: none;
-}
-
-li a {
-  text-decoration: none;
 }
 
 .nav-items ul li:nth-child(1) a {
@@ -81,7 +88,7 @@ li a {
   color: rgb(137, 135, 161);
 }
 
-/* hero section style */
+/* ========= Hero Section ========== */
 .hero-section {
   margin-top: 120px;
   display: flex;
@@ -115,7 +122,8 @@ li a {
   height: auto;
   display: block;
 }
-/* header section responsive style */
+
+/* ============header section responsive style=========== */
 @media screen and (max-width: 768px) {
   .container {
     max-width: 100%;
@@ -123,10 +131,16 @@ li a {
   }
   nav {
     max-width: 95%;
+    margin: 20px auto;
   }
   ul {
     display: none;
   }
+
+  .logo img {
+    width: 65px;
+  }
+
   .hero-section {
     max-width: 95%;
     flex-direction: column-reverse;
@@ -150,7 +164,7 @@ li a {
   }
 }
 
-/* plants-section style */
+/* ========= Plants Section ========== */
 .plants-section {
   text-align: center;
   margin-top: 120px;
@@ -208,7 +222,7 @@ li a {
   padding: 26px 50px;
 }
 
-/* ==============our plants responsive style================ */
+/* ==============Plant section responsive style================ */
 @media screen and (max-width: 768px) {
   .plants-section {
     margin-top: 65px;
@@ -240,7 +254,7 @@ li a {
   }
 }
 
-/* ==============plants-lover style================ */
+/* ========= Plants Lover Section ========== */
 .plants-lover {
   margin-top: 210px;
   display: flex;
@@ -292,18 +306,20 @@ li a {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* plants-lover responsive style */
-
+/* ==============Plants-lover responsive style ================ */
 @media screen and (max-width: 768px) {
   .plants-lover {
-    overflow: hidden;
+    gap: 18px;
     max-width: 95%;
-    margin-top: 120px;
+    margin-top: 47px;
     flex-direction: column;
+    overflow: hidden;
   }
+
   .plants-lover-text {
     width: 95%;
   }
+
   .plants-lover-text ul li {
     list-style: none;
   }
@@ -311,6 +327,7 @@ li a {
   .plants-lover-img {
     max-width: 95%;
   }
+
   .plants-lover-img img {
     display: block;
     max-width: 100%;
@@ -322,7 +339,7 @@ li a {
   }
 }
 
-/* ==============latest deals section style ================ */
+/* ========= Latest Deals Section ========== */
 .latest-deals {
   display: flex;
   text-align: center;
@@ -420,7 +437,6 @@ li a {
 }
 
 /* ==============last deals section style  ================ */
-
 @media screen and (max-width: 768px) {
   .latest-cards {
     grid-template-columns: 1fr;
@@ -462,11 +478,12 @@ li a {
   }
 }
 
-/*==============join-section style===================*/
+/* ========= Newsletter Section ========== */
 
 .news-letter {
   background: linear-gradient(rgba(7, 51, 79, 0.4), rgba(7, 51, 79, 0.4)),
     url("../assets/news-letter-bg.png");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -523,7 +540,7 @@ li a {
   background: rgb(204, 77, 4);
 }
 
-/* news letter responsive  */
+/* ========= Newsletter Section Responsive ========== */
 @media screen and (max-width: 768px) {
   .news-letter {
     max-width: 100%;
@@ -549,7 +566,7 @@ li a {
   }
 }
 
-/* ============footer section ============== */
+/* ========= Footer Section ========== */
 .footer-section {
   display: flex;
   align-items: start;
@@ -588,13 +605,17 @@ li a {
   justify-content: space-around;
 }
 
-/* ========footer responsive style========= */
+/* ========= Footer Section Responsive Style ========== */
 @media screen and (max-width: 768px) {
   .footer-section {
-    gap: 40px;
+    gap: 35px;
     margin: 0 auto;
     max-width: 100%;
     padding: 47px 20px;
     flex-direction: column;
+  }
+
+  .footer-links ul {
+    gap: 25px;
   }
 }

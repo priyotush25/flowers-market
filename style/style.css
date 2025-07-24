@@ -275,6 +275,17 @@ ul {
   width: 286px;
   margin: -550px 0px 0 350px;
   position: absolute;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .plants-lover-img {

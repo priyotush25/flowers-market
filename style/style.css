@@ -309,3 +309,137 @@ li a {
     z-index: 1;
   }
 }
+
+/* last-deals-section style */
+.last-deals-section {
+  margin-top: 133px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.last-deals-section h4 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: rgb(233, 90, 8);
+}
+.last-deals-section h4 span {
+  font-size: 50px;
+  font-weight: 700;
+  color: black;
+}
+
+.last-deals-section p {
+  width: 888px;
+  margin-bottom: 120px;
+}
+
+.last-deal-section-img {
+  gap: 28px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.last-deal-img-left {
+  width: 33%;
+  height: 423.13px;
+}
+
+.last-deal-img-left-card-1 {
+  height: 47%;
+  width: 100%;
+  display: flex;
+  margin-bottom: 27px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../assets/deal-bloom.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.last-deal-img-left-card-2 {
+  height: 47%;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../assets/deal-ana.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.last-deal-img-right {
+  height: 423.13px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 30px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../assets/deal-zabo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.last-deal-img-right .discount,
+.shop-now {
+  font-size: 40px;
+}
+.last-deal-img-right .shop-now {
+  font-size: 30px;
+}
+
+.discount {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.shop-now {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline;
+}
+
+/* last-deals-section style */
+@media screen and (max-width: 768px) {
+  .last-deal-section-img {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    border: 2px solid blue;
+  }
+
+  .last-deals-section p {
+    width: 90%;
+  }
+
+  .last-deal-img-left {
+    width: 95%;
+  }
+
+  .last-deal-img-right {
+    height: 581px;
+    width: 95%;
+    border-radius: 30px;
+  }
+}

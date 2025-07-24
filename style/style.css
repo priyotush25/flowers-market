@@ -339,6 +339,9 @@ li a {
   max-width: 95%;
   margin-bottom: 120px;
 }
+.latest-deal-text p {
+  margin-top: 16px;
+}
 
 /* card container */
 .latest-cards {
@@ -425,6 +428,7 @@ li a {
   .latest-cards {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    margin-bottom: 44px;
   }
 
   .card-1,
@@ -456,5 +460,93 @@ li a {
     font-size: 25px;
     font-weight: 700;
     font-family: "Noto Serif", serif;
+  }
+}
+
+/* join-section style */
+
+.news-letter {
+  background: linear-gradient(rgba(7, 51, 79, 0.4), rgba(7, 51, 79, 0.4)),
+    url("../assets/news-letter-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 533px;
+  width: 1440px;
+  margin: 0 auto;
+
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.news-letter .title {
+  color: white;
+  margin-bottom: 23px;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe input {
+  width: 644px;
+  padding: 20px 45px;
+  display: inline-block;
+}
+
+.subscribe input:focus {
+  outline: none;
+}
+
+.subscribe input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.subscribe-btn {
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 186px;
+  padding: 20px 45px;
+  background: rgb(233, 90, 8);
+}
+
+.subscribe-btn:hover {
+  background: rgb(204, 77, 4);
+}
+
+/* news letter responsive  */
+@media screen and (max-width: 768px) {
+  .news-letter {
+    max-width: 100%;
+    height: 275px;
+  }
+  .subscribe {
+    max-width: 75%;
+  }
+  .subscribe input {
+    width: 60%;
+    padding: 15px 35px;
+    display: inline-block;
+  }
+  .subscribe-btn {
+    width: 40%;
+    padding: 15px 20px;
+  }
+
+  .news-letter .title {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 23px;
   }
 }
